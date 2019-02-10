@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+    	<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<title th:text="${title}"></title>
+		<meta property="og:title" th:content="${title}" content="CamperSites.info" />
+		<meta property="og:type" content="website" />
+		<meta property="og:image" th:content="${image}" content="http://www.campersites.info/img/banner_1024_500.png" />
+		<meta property="og:locale" content="en_GB" />
+		<meta property="og:locale:alternate" content="it_IT" />
+		<meta property="og:locale:alternate" content="fr_FR" />
+		<meta property="og:description" content="To search by map all camper areas in Europe with photos and reviews. To compare and share all camper areas with data, photos and suggestions." />
+		<meta property="og:site_name" content="CamperSites.info" />
+		<meta property="og:url" th:content="${url}" content="http://www.campersites.info" />
+		<meta property="fb:app_id" content="233180500170599" />
+    </head>
+    <body>
+		<p th:text="${title}"></p>
+		<p>To search by map all camper areas in Europe with photos and reviews. To compare and share all camper areas with data, photos and suggestions.</p>
+		<img th:src="${image}" src="" />
+    </body>
+</html>

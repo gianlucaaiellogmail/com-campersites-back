@@ -1,0 +1,24 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+                           http://www.springframework.org/schema/context http://www.springframework.org/schema/task/spring-context.xsd">
+
+	<!-- Basic Configurations -->
+	<context:annotation-config />
+
+	<context:component-scan base-package="com.absontheweb.workshop.model" />
+	<context:component-scan base-package="com.absontheweb.workshop.repository" />
+	<context:component-scan base-package="com.absontheweb.workshop.service" />
+	<context:component-scan base-package="com.absontheweb.workshop.controller" />
+
+	<!-- SpringMVC -->
+	<import resource="spring-mvc.xml" />
+
+	<!-- SpringData -->
+	<import resource="spring-jpa.xml" />
+	
+	<import resource="spring-security.xml" />
+
+</beans>
+

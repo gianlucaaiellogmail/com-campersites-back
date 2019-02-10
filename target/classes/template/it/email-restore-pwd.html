@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title th:remove="all"></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    </head>
+    <body>
+        <p><a href="http://www.campersites.info"><img src="http://www.campersites.info/images/logo_campersites.png" width="121" height="50" /></a></p>
+        <hr />
+        <div>
+        	<p th:text="${'Gentile ' + nickname + ','}"></p><p>abbiamo ricevuto una richiesta di abilitazione alla procedura di recupero password per questo indirizzo email.</p><p>Per poter scegliere una nuova password per il tuo account segui il link sotto.</p>
+        </div>
+        <p><a href="" th:href="${'http://www.campersites.info/restorePwd/' + restoreCode}" th:text="${'http://www.campersites.info/restorePwd/' + restoreCode}"></a></p>
+        <p>Saluti,<br/><em>Il team di CamperSites.info</em></p>
+    </body>
+</html>

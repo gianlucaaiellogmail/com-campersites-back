@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title th:remove="all"></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    </head>
+    <body>
+        <p><a href="http://www.campersites.info"><img src="http://www.campersites.info/images/logo_campersites.png" width="121" height="50" /></a></p>
+        <hr />
+        <div>
+        	<p th:text="${'Dear ' + nickname + ','}"></p><p>Thank you for choosing CamperSites.info.</p><p>To activate your account please follow the link below.</p>
+        </div>
+        <p><a href="" th:href="${'http://www.campersites.info/activate/' + activationCode}" th:text="${'http://www.campersites.info/activate/' + activationCode}"></a></p>
+        <p>Best regards,<br/><em>The CamperSites.info team</em></p>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+                           http://www.springframework.org/schema/context http://www.springframework.org/schema/task/spring-context.xsd">
+
+	<!-- Basic Configurations -->
+	<context:annotation-config />
+
+	<context:component-scan base-package="info.campersites.model" />
+	<context:component-scan base-package="info.campersites.repository" />
+	<context:component-scan base-package="info.campersites.service" />
+	<context:component-scan base-package="info.campersites.controller" />
+	<context:component-scan base-package="info.campersites.filter" />
+	<context:component-scan base-package="info.campersites.exception.handlers" />
+	<context:component-scan base-package="info.campersites.config" />
+	<context:component-scan base-package="info.campersites.task" />
+	<context:component-scan base-package="old.info.campersites" />
+
+	<!-- SpringMVC -->
+	<import resource="spring-mvc.xml" />
+
+	<!-- SpringData -->
+	<import resource="spring-jpa.xml" />
+	
+	<!-- SpringSecurity -->
+	<import resource="spring-security.xml" />
+
+</beans>
+
